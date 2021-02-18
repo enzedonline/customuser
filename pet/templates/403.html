@@ -1,0 +1,20 @@
+{% extends 'account/base_card.html' %}
+
+{% load i18n socialaccount %}
+
+{% block title %}{% trans "Unauthorized Access" %}{% endblock %}
+
+{% block card-header %}
+    <h3>{% trans "Unauthorized Access" %}</h3>
+{% endblock %}
+
+{% block card-body %}
+
+{% trans "The requested action did not match your logged in credentials."%}
+
+
+{% endblock %}
+
+{% block card-footer %}
+    <p><a href="/">{% trans "Return to Home Page" %}</a></p>
+{% endblock %}

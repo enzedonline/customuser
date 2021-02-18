@@ -1,0 +1,406 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-12 20:02+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\home\templates\home\welcome_page.html:6
+msgid "Visit the Wagtail website"
+msgstr ""
+
+#: .\home\templates\home\welcome_page.html:15
+msgid "View the release notes"
+msgstr ""
+
+#: .\home\templates\home\welcome_page.html:27
+msgid "Welcome to your new Wagtail site!"
+msgstr ""
+
+#: .\home\templates\home\welcome_page.html:28
+msgid ""
+"Please feel free to <a href=\"https://github.com/wagtail/wagtail/wiki/Slack"
+"\">join our community on Slack</a>, or get started with one of the links "
+"below."
+msgstr ""
+
+#: .\home\templates\home\welcome_page.html:35
+msgid "Wagtail Documentation"
+msgstr ""
+
+#: .\home\templates\home\welcome_page.html:36
+msgid "Topics, references, & how-tos"
+msgstr ""
+
+#: .\home\templates\home\welcome_page.html:42
+msgid "Tutorial"
+msgstr ""
+
+#: .\home\templates\home\welcome_page.html:43
+msgid "Build your first Wagtail site"
+msgstr ""
+
+#: .\home\templates\home\welcome_page.html:49
+msgid "Admin Interface"
+msgstr ""
+
+#: .\home\templates\home\welcome_page.html:50
+msgid "Create your superuser first!"
+msgstr ""
+
+#: .\pet\templates\userauth\account\delete.html:5
+#: .\pet\templates\userauth\account\delete.html:8
+msgid "Delete account"
+msgstr ""
+
+#: .\pet\templates\userauth\account\delete.html:15
+msgid "Are you sure you want to delete the account"
+msgstr ""
+
+#: .\pet\templates\userauth\account\delete.html:16
+msgid "Delete"
+msgstr ""
+
+#: .\pet\templates\userauth\account\delete.html:18
+msgid "No, keep my account"
+msgstr ""
+
+#: .\pet\templates\userauth\account\delete.html:19
+#: .\pet\templates\userauth\account\logout.html:21
+msgid "Return to site"
+msgstr ""
+
+#: .\pet\templates\userauth\account\email_confirm.html:5
+#: .\pet\templates\userauth\account\email_confirm.html:8
+msgid "Confirm e-mail address"
+msgstr ""
+
+#: .\pet\templates\userauth\account\email_confirm.html:17
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+
+#: .\pet\templates\userauth\account\email_confirm.html:21
+msgid "Confirm"
+msgstr ""
+
+#: .\pet\templates\userauth\account\email_confirm.html:28
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+
+#: .\pet\templates\userauth\account\login.html:5
+#: .\pet\templates\userauth\account\login.html:8
+#: .\pet\templates\userauth\account\login.html:23
+#: .\pet\templates\userauth\account\signup.html:52
+msgid "Sign in"
+msgstr ""
+
+#: .\pet\templates\userauth\account\login.html:27
+msgid "or sign in with one of your existing third party accounts:"
+msgstr ""
+
+#: .\pet\templates\userauth\account\login.html:34
+msgid "Don't have an account?"
+msgstr ""
+
+#: .\pet\templates\userauth\account\login.html:34
+#: .\pet\templates\userauth\account\signup.html:5
+#: .\pet\templates\userauth\account\signup.html:8
+#: .\pet\templates\userauth\account\signup.html:41
+#: .\pet\templates\userauth\socialaccount\signup.html:5
+#: .\pet\templates\userauth\socialaccount\signup.html:8
+#: .\pet\templates\userauth\socialaccount\signup.html:34
+#: .\pet\templates\userauth\socialaccount\signup.html:40
+msgid "Sign up"
+msgstr ""
+
+#: .\pet\templates\userauth\account\login.html:36
+msgid "Forgot password?"
+msgstr ""
+
+#: .\pet\templates\userauth\account\logout.html:5
+#: .\pet\templates\userauth\account\logout.html:8
+#: .\pet\templates\userauth\account\logout.html:17
+msgid "Sign out"
+msgstr ""
+
+#: .\pet\templates\userauth\account\logout.html:13
+msgid "Are you sure you want to sign out?"
+msgstr ""
+
+#: .\pet\templates\userauth\account\logout.html:20
+msgid "No, stay logged in"
+msgstr ""
+
+#: .\pet\templates\userauth\account\password_reset.html:6
+#: .\pet\templates\userauth\account\password_reset.html:9
+#: .\pet\templates\userauth\account\password_reset_done.html:6
+#: .\pet\templates\userauth\account\password_reset_done.html:9
+msgid "Password reset"
+msgstr ""
+
+#: .\pet\templates\userauth\account\password_reset.html:19
+msgid "Reset password"
+msgstr ""
+
+#: .\pet\templates\userauth\account\password_reset_done.html:14
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: .\pet\templates\userauth\account\password_reset_from_key.html:5
+#: .\pet\templates\userauth\account\password_reset_from_key.html:8
+#: .\pet\templates\userauth\account\password_reset_from_key.html:25
+#: .\pet\templates\userauth\account\password_reset_from_key_done.html:4
+#: .\pet\templates\userauth\account\password_reset_from_key_done.html:7
+msgid "Change password"
+msgstr ""
+
+#: .\pet\templates\userauth\account\password_reset_from_key.html:8
+msgid "Bad token"
+msgstr ""
+
+#: .\pet\templates\userauth\account\password_reset_from_key.html:14
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+
+#: .\pet\templates\userauth\account\password_reset_from_key.html:28
+#: .\pet\templates\userauth\account\password_reset_from_key_done.html:11
+msgid "Your password is now changed."
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:5
+msgid "Profile"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:8
+msgid "Account profile"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:16
+msgid "E-mail"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:20 .\userauth\forms.py:17
+#: .\userauth\models.py:9
+msgid "Display name"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:26 .\userauth\forms.py:15
+msgid "First name"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:30 .\userauth\forms.py:16
+msgid "Last name"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:36
+msgid "Address1"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:42
+msgid "Address2"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:48 .\userauth\models.py:14
+msgid "City"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:52
+msgid "Postal code"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:56
+msgid "Country"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:62 .\userauth\models.py:17
+msgid "Mobile phone"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:66 .\userauth\models.py:10
+msgid "Date of birth"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:72 .\userauth\models.py:18
+msgid "Additional information"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:78 .\userauth\models.py:19
+msgid "Photo"
+msgstr ""
+
+#: .\pet\templates\userauth\account\profile.html:79
+msgid "User photo"
+msgstr ""
+
+#: .\pet\templates\userauth\account\signup.html:45
+msgid "or sign up with one of your existing third party accounts:"
+msgstr ""
+
+#: .\pet\templates\userauth\account\signup.html:52
+#: .\pet\templates\userauth\socialaccount\signup.html:41
+msgid "Already have an account?"
+msgstr ""
+
+#: .\pet\templates\userauth\account\update.html:5
+#: .\pet\templates\userauth\account\update.html:8
+msgid "Update account"
+msgstr ""
+
+#: .\pet\templates\userauth\account\update.html:59
+msgid "Update"
+msgstr ""
+
+#: .\pet\templates\userauth\account\update.html:64
+msgid "Connect your existing account to one of your social accounts:"
+msgstr ""
+
+#: .\pet\templates\userauth\account\update.html:69
+msgid "Delete your account"
+msgstr ""
+
+#: .\pet\templates\userauth\account\verification_sent.html:5
+#: .\pet\templates\userauth\account\verification_sent.html:8
+msgid "Verify your e-mail address"
+msgstr ""
+
+#: .\pet\templates\userauth\account\verification_sent.html:13
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: .\pet\templates\userauth\email\base_message.txt:1
+#, python-format
+msgid "Hello from %(site_name)s!"
+msgstr ""
+
+#: .\pet\templates\userauth\email\base_message.txt:5
+#, python-format
+msgid ""
+"Thank you for using %(site_name)s!\n"
+"%(site_domain)s"
+msgstr ""
+
+#: .\pet\templates\userauth\email\email_confirmation_message.txt:5
+#, python-format
+msgid ""
+"You're receiving this e-mail because user %(user_display)s has given your e-"
+"mail address to register an account on %(site_domain)s.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s"
+msgstr ""
+
+#: .\pet\templates\userauth\email\email_confirmation_subject.txt:3
+msgid "Please Confirm Your E-mail Address"
+msgstr ""
+
+#: .\pet\templates\userauth\email\password_reset_key_message.txt:4
+msgid ""
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password."
+msgstr ""
+
+#: .\pet\templates\userauth\email\password_reset_key_message.txt:9
+#, python-format
+msgid "In case you forgot, your username is %(username)s."
+msgstr ""
+
+#: .\pet\templates\userauth\email\password_reset_key_subject.txt:3
+msgid "Password Reset E-mail"
+msgstr ""
+
+#: .\pet\templates\userauth\socialaccount\conections.html:5
+#: .\pet\templates\userauth\socialaccount\conections.html:8
+msgid "Account connections"
+msgstr ""
+
+#: .\pet\templates\userauth\socialaccount\conections.html:14
+msgid ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
+msgstr ""
+
+#: .\pet\templates\userauth\socialaccount\conections.html:36
+msgid "Remove"
+msgstr ""
+
+#: .\pet\templates\userauth\socialaccount\conections.html:42
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr ""
+
+#: .\pet\templates\userauth\socialaccount\conections.html:46
+msgid "Add a social account"
+msgstr ""
+
+#: .\pet\templates\userauth\socialaccount\signup.html:13
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to\n"
+"    %(site_name)s. As a final step, please complete the following form:"
+msgstr ""
+
+#: .\pet\templates\userauth\socialaccount\signup.html:40
+msgid "Sign up with e-mail and password?"
+msgstr ""
+
+#: .\pet\templates\userauth\socialaccount\signup.html:41
+msgid "Sign in first"
+msgstr ""
+
+#: .\pet\templates\userauth\socialaccount\signup.html:41
+msgid " and connect to your social account in your profile."
+msgstr ""
+
+#: .\userauth\forms.py:17
+msgid "Will be shown e.g. when commenting."
+msgstr ""
+
+#: .\userauth\models.py:9
+msgid "Will be shown e.g. when commenting"
+msgstr ""
+
+#: .\userauth\models.py:11
+msgid "Address line 1"
+msgstr ""
+
+#: .\userauth\models.py:12
+msgid "Address line 2"
+msgstr ""
+
+#: .\userauth\models.py:13
+msgid "Postal Code"
+msgstr ""
+
+#: .\userauth\models.py:16
+msgid ""
+"Enter a valid international mobile phone number starting with +(country code)"
+msgstr ""

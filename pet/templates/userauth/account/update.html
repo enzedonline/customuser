@@ -12,7 +12,7 @@
 
     {% get_providers as socialaccount_providers %}
 
-    <form method="POST" action="{% url 'account_update' request.user.pk %}" enctype="multipart/form-data" class="needs-validation" novalidate>
+    <form method="POST" action="{% url 'account_update' request.user.url %}" enctype="multipart/form-data" class="needs-validation" novalidate>
         {% csrf_token %}
         <div class="form-group">
             {% with field=form.display_name %}{% include "account/form_field.html" %}{% endwith %}
@@ -66,7 +66,7 @@
     {% endif %}
     <div class="text-center py-2">
         <small>
-            <a href="{% url 'account_delete' request.user.pk %}" class="text-muted">{% trans "Delete your account" %}</a>
+            <a href="{% url 'account_delete' request.user.url %}" class="text-muted">{% trans "Delete your account" %}</a>
         </small>
     </div>
 

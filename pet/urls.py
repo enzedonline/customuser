@@ -2,6 +2,8 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.urls import path
 from django.contrib import admin
+from django.conf.urls.i18n import i18n_patterns
+
 
 from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.core import urls as wagtail_urls
@@ -15,19 +17,17 @@ urlpatterns = [
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^documents/', include(wagtaildocs_urls)),
 
+    url(r'^search/$', search_views.search, name='search'),
+
     #url(r'^sitemap.xml$', sitemap),
-
-    url(r'', include('allauth.urls')), # Creates urls like yourwebsite.com/login/
-    url(r'^accounts/', include('allauth.urls')), # Creates urls like yourwebsite.com/accounts/login/
-
-    path('accounts/', include('userauth.urls')),
-
-    # For anything not caught by a more specific rule above, hand over to
-    # Wagtail's page serving mechanism. This should be the last pattern in
-    # the list:
-    url(r'', include(wagtail_urls)),
 ]
 
+urlpatterns += i18n_patterns(
+    url(r'^accounts/', include('allauth.urls')), # Creates urls like yourwebsite.com/accounts/login/
+    url(r'^accounts/', include('userauth.urls')),
+    url(r'^language/', include('cms.urls')),
+    url(r'^comments/', include('django_comments_xtd.urls')),
+)
 
 if settings.DEBUG:
     from django.conf.urls.static import static
@@ -37,3 +37,9 @@ if settings.DEBUG:
     urlpatterns += staticfiles_urlpatterns()
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+urlpatterns = urlpatterns + [
+    # For anything not caught by a more specific rule above, hand over to
+    # Wagtail's page serving mechanism. This should be the last pattern in
+    # the list:
+    url(r'', include(wagtail_urls)),
+]
