@@ -12,13 +12,22 @@ def get_menu(slug, page, logged_in):
         # see if there is a custom menu defined for the slug of the item
         candidates = Menu.objects.get(slug=slug).menu_items.all()
         language_code = translation.get_language()
-
         # create a list of all items that should be shown in the menu depending on logged_in
         menu_items = []
         for candidate in candidates:
+            trans_page = candidate.trans_page(language_code)
+            if trans_page:
+                print(trans_page.title)
+            link_page_title = trans_page.title if trans_page else None
             if candidate.show(logged_in):
-                menu_items.append({'title': candidate.title, 'url': candidate.trans_url(language_code),
-                                   'slug': candidate.slug_of_submenu, 'page': candidate.trans_page(language_code), 'icon': candidate.icon})
+                menu_items.append({
+                    'title': candidate.title, 
+                    'url': candidate.trans_url(language_code),
+                    'slug': candidate.slug_of_submenu, 
+                    'page': candidate.trans_page(language_code), 
+                    'icon': candidate.icon,
+                    'link_page_title': link_page_title
+                })
         return menu_items
     except Menu.DoesNotExist:
         pass

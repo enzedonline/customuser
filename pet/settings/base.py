@@ -84,6 +84,8 @@ TEMPLATES = [
             os.path.join(PROJECT_DIR, 'templates'),
             os.path.join(PROJECT_DIR, 'templates/userauth/'),
             os.path.join(PROJECT_DIR, 'templates/cms/'),
+            os.path.join(PROJECT_DIR, 'templates/home/'),
+            os.path.join(PROJECT_DIR, 'templates/search/'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -100,7 +102,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'pet.wsgi.application'
 
 # Languages
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'en-gb'
 USE_I18N = True
 LANGUAGES = [
     ('en', 'English'),
@@ -168,8 +170,6 @@ AUTHENTICATION_BACKENDS = (
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
-
-LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 

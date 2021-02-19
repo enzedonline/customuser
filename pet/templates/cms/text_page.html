@@ -2,15 +2,12 @@
 
 {% load wagtailcore_tags %}
 
-{% block body_class %}template-textpage{% endblock %}
+{% comment %} {% block body_class %}template-textpage{% endblock %} {% endcomment %}
 
 {% block content %}
 
-    <div class="container-fluid mt-4">
-        <div>
-            <h3>{{ page.title }}</h3>
-        </div>
-        <div>
+    <div>
+        <div class="container-flex m-4">
             {{ page.text|richtext }}
         </div>
     </div>
