@@ -26,11 +26,18 @@ def set_language_from_url(request, language_code):
             prev_page = TranslatablePage.objects.get(url_path=prev_url_path)
 
             # if the current page has a canonical page, use that, otherwise the current page itself is canonical
-            can_page = prev_page.canonical_page if prev_page.canonical_page else prev_page
+            if prev_page.canonical_page:
+                can_page = prev_page.canonical_page  
+            else:
+                can_page = prev_page
 
             # if the requested language is the canonical (default) language, use the canonical page, else find the translated page
             language = Language.objects.get(code=language_code)
-            next_url = can_page.url if language_code == settings.LANGUAGE_CODE else TranslatablePage.objects.get(language=language, canonical_page=can_page).url
+            if language_code == settings.LANGUAGES[0][0]:
+                next_url = can_page.url  
+            else:
+                next_url = TranslatablePage.objects.get(language=language, canonical_page=can_page).url
+
         except (TranslatablePage.DoesNotExist, Language.DoesNotExist):
             # previous page is not a TranslatablePage, try if previous path can be translated by changing the language code
             next_url = urls.translate_url(previous, language_code)
@@ -46,5 +53,5 @@ def set_language_from_url(request, language_code):
 
     translation.activate(language_code)
     response = HttpResponseRedirect(next_url)
-    response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language_code)
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language_code, max_age=60*60*24*365)
     return response
