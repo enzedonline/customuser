@@ -16,8 +16,6 @@ def get_menu(slug, page, logged_in):
         menu_items = []
         for candidate in candidates:
             trans_page = candidate.trans_page(language_code)
-            if trans_page:
-                print(trans_page.title)
             link_page_title = trans_page.title if trans_page else None
             if candidate.show(logged_in):
                 menu_items.append({

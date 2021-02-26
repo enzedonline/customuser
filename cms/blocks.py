@@ -23,13 +23,6 @@ class InlineImageBlock(blocks.StructBlock):
     class Meta:
         icon = 'image'
 
-class EmbedBlock2(EmbedBlock):
-    def clean(self, value):
-        print(value.url)
-        result = super().clean(value) 
-        print('ttttttttt')
-        return result
-
 class InlineVideoBlock(blocks.StructBlock):
     video = EmbedBlock(label=_("Video"))
     caption = CharBlock(required=False, label=_("Caption"))

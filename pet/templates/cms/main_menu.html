@@ -15,9 +15,12 @@
                 {% get_menu item.slug item.page request.user.is_authenticated as submenu %}
                 <li class="{% if submenu %}dropdown {% endif %}p-2">
                     <div class="dropdown show">
-                        <a href="#"
-                                {% if submenu %} class="menuitem dropdown-toggle {% if item.icon %}menuicon{% endif %}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                {% else %} data-toggle="tooltip" title="{{ item.title }}" class="menuitem"
+                        <a href={{ item.url }}
+                                {% if submenu %} class="menuitem dropdown-toggle 
+                                    {% if item.icon %}menuicon{% endif %}" 
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                {% else %} 
+                                    data-toggle="tooltip" title="{{ item.title }}" class="menuitem"
                                 {% endif %}
                         >
                             {% if item.icon %}
@@ -50,5 +53,3 @@
         </ul>
     </div>
 </nav>
-
-<nav2

@@ -76,8 +76,14 @@
     </div>
 
     {% if not request.user.is_authenticated %}
+        {% get_current_language as LANGUAGE_CODE %}
         <div id="id_comment_invite" class="container-fluid mt-4">
-            <p>{% trans "Comment on this article ("%}<a href="#" id="id_login_first_link">{% trans "sign in first" %}</a>{% trans " or confirm by name and email below)" %}</p>
+            <p><a href="#" id="id_login_first_link">{% trans "Log in" %}</a> {% trans "or"%} 
+               <a href='/{{LANGUAGE_CODE}}/accounts/signup'>{% trans "sign up"%}</a> {% trans "to comment:" %}</p>
+        </div>
+    {% else %}
+        <div class="container-fluid mt-4 comment-form">
+            {% render_comment_form for page %}
         </div>
     {% endif %}
 
@@ -99,10 +105,6 @@
             </form>
         </div>
     {% endif %}
-
-    <div class="container-fluid mt-4 comment-form">
-        {% render_comment_form for page %}
-    </div>
 
     {% get_comment_count for page as comment_count %}
     {% if comment_count %}

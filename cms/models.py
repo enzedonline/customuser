@@ -337,7 +337,7 @@ class MenuItem(Orderable):
                 can_page = self.link_page.canonical_page
             else:
                 can_page = self.link_page
-            if language_code == settings.LANGUAGE_CODE:  # requested language is the canonical language
+            if language_code == settings.LANGUAGES[0][0]:  # requested language is the canonical language
                 return can_page
             try:
                 language = Language.objects.get(code=language_code)

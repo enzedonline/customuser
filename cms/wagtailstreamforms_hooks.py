@@ -15,12 +15,13 @@ def email_submission(instance, form):
 
     # build up the email content
     for field, value in form.cleaned_data.items():
-        if field in form.files:
-            count = len(form.files.getlist(field))
-            value = '{} file{}'.format(count, pluralize(count))
-        elif isinstance(value, list):
-            value = ', '.join(value)
-        content.append('{}: {}'.format(field, value))
+        if not field in ('recaptcha', 'form_reference'):
+            if field in form.files:
+                count = len(form.files.getlist(field))
+                value = '{} file{}'.format(count, pluralize(count))
+            elif isinstance(value, list):
+                value = ', '.join(value)
+            content.append('{}:\n{}\n'.format(field, value))
     content = '\n'.join(content)
 
     # create the email message
